@@ -1,0 +1,7 @@
+Seminar 3  Multimedia
+-tfoot=document.querySelector('tfoot') -- declar variabila tfoot ce devine acces rapid la 	tfoot ca sa nu plec din Document, adica primeste adresa ljui practic
+adica uite asa: tfoot.queryseletorall('td')
+
+-ca sa nu am treaba cu cand se incarca JS ul fac o fucntie care incarca tot cand e DOM content loaded SAU pun la final(mai bine asa)
+
+//queryselectorall = lista cu toate chestiile ce au selectorul 
