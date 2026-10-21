@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Agenda telefonică</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <h1>Agenda telefonică</h1>
+    <table>
+        <caption>
+            Lista persoane
+            <input type="text" name="" id="filtru">
+        </caption>
+        <thead>
+            <tr>
+                <th class="ion">Nume</th>
+                <th>Prenume</th>
+                <th class="ion maria">Telefon</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Popescu</td>
+                <td>Ion</td>
+                <td>023423222</td>
+            </tr>
+            <tr>
+                <td>Vasilescu</td>
+                <td>Maria</td>
+                <td>073423222</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Număr persoane: 2</td>
+            </tr>
+        </tfoot>
+    </table>
+    <form action="#" class="controls">
+        <label id="mirel" for="nume">Nume:</label>
+        <input name="nume" id="nume">
+
+        <label for="prenume">Prenume:</label>
+        <input name="prenume" id="prenume">
+
+        <label for="Telefon">Telefon:</label>
+        <input name="telefon" id="telefon">
+
+        <input type="button" id="btnAdauga" name="btnAdauga" value="Adaugă">
+    </form>
+</body>
+
+</html>

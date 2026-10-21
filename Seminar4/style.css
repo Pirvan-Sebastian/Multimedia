@@ -1,0 +1,133 @@
+        /* Seminar 3 — agenda telefonică: foaia de stil */
+
+        /* region: pas1 */
+        /* Pasul 1 — fontul: body îl transmite prin moștenire; input nu moștenește, deci se grupează cu body */
+        body,
+        input {
+            font-family: Tahoma, Verdana, sans-serif;
+            font-size: 11pt;
+        }
+
+        /* endregion */
+
+        /* region: pas2 */
+        /* Pasul 2 — titlul: bandă pe toată lățimea ferestrei, trasă peste padding-ul lui body */
+        body {
+            margin: 0;
+            padding: 16px;
+        }
+
+        h1 {
+            margin: -16px -16px 20px -16px;
+            padding: 16px;
+            background-color: navy;
+            color: white;
+        }
+
+        /* endregion */
+
+        /* region: pas3 */
+        /* Pasul 3 — tabelul: doar linii orizontale */
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            padding: 8px 0;
+            font-size: 13pt;
+            font-weight: bold;
+            color: navy;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid gainsboro;
+            text-align: left;
+        }
+
+        th {
+            border-bottom: 2px solid navy;
+            color: navy;
+        }
+
+        tfoot td {
+            border-bottom: none;
+            color: gray;
+            font-style: italic;
+        }
+
+        /* endregion */
+
+        /* region: pas4 */
+        /* Pasul 4 — formularul: selector de clasă și selector de atribut */
+        .controls {
+            padding: 16px;
+            background-color: lavender;
+            border-top: 4px solid navy;
+        }
+
+        input {
+            padding: 4px 6px;
+            border: 1px solid darkgray;
+        }
+
+        input[type="button"] {
+            margin-top: 6px;
+            padding: 8px;
+            border: none;
+            background-color: navy;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* endregion */
+
+        /* region: pas5 */
+        /* Pasul 5 — layout: tabelul la stânga, formularul la dreapta */
+        table {
+            float: left;
+            width: 60%;
+        }
+
+        .controls {
+            float: right;
+            width: 30%;
+        }
+
+        /* endregion */
+
+        /* region: pas6 */
+        /* Pasul 6 — etichete și câmpuri pe rânduri: display, float și clear */
+        label {
+            display: block;
+            float: left;
+            clear: both;
+            width: 30%;
+            padding: 4px 0;
+            margin-bottom: 10px;
+        }
+
+        input {
+            display: block;
+            float: right;
+            width: 60%;
+            margin-bottom: 10px;
+        }
+
+        input[type="button"] {
+            clear: both;
+            width: 100%;
+        }
+
+        .selectat {
+            background-color: lavender;
+
+        }
+
+        tbody {
+            cursor: pointer;
+        }
+
+        /* endregion */
