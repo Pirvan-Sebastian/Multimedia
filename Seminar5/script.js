@@ -27,7 +27,7 @@ function afisare() {
     getComputedStyle(proba).backgroundColor;
   //getComputedStyle(x) imi returneaza un obiect cu style ul lui x si pot .propietatiCSS prin el!!!
 }
-
+//coordonata este h,s,l 
 function banda(coordonata, maxim, pas, functie) {
   const banda = document.querySelector(`#banda${coordonata}`);
   //#bandah,bandas,bandal si le interpolez ca sa le creezautomat cu id ul care e fie h,s,l
@@ -37,6 +37,8 @@ function banda(coordonata, maxim, pas, functie) {
     const patrat = document.createElement("div");
     patrat.classList.add("patrat");
     patrat.style.backgroundColor = functie(value);
+    patrat.dataset.coordonata = coordonata;
+    patrat.dataset.value = value;
     banda.append(patrat);
   }
 }
@@ -48,8 +50,12 @@ function schimbareInput(e) {
 }
 
 function clickPatrat(e) {
-  const patrat = e.target;
-  console.log(patrat);
+  const patrat = e.target.closest('.patrat');
+
+  if (!patrat) return;
+  //dataset sunt atribute custom cu data-coordonata
+  culoare[patrat.dataset.coordonata] = Number(patrat.dataset.value);
+  afisare();
 }
 //4.Initializare
 function aplicatie() {
