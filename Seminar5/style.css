@@ -1,0 +1,33 @@
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 11pt;
+}
+#proba {
+  width: 504px;
+  height: 120px;
+  border: 1px solid gray;
+}
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+.patrat {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+  border: 1px solid silver;
+}
+input[type="range"] {
+  display: block;
+  width: 504px;
+}
+th,
+td {
+  padding: 4px 12px;
+  text-align: left;
+}
+td {
+  font-family: monospace;
+}

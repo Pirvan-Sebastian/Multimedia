@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8">
+    <title>Selector de culoare HSL</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Selector de culoare HSL</h1>
+    <div id="proba"></div>
+    <div id="benzi">
+        <label for="h">Nuanța (H): <span id="vh"></span>°</label>
+        <div id="bandah"></div>
+        <input type="range" id="h" min="0" max="360">
+        <label for="s">Saturația (S): <span id="vs"></span>%</label>
+        <div id="bandas"></div>
+        <input type="range" id="s" min="0" max="100">
+        <label for="l">Luminozitatea (L): <span id="vl"></span>%</label>
+        <div id="bandal"></div>
+        <input type="range" id="l" min="0" max="100">
+    </div>
+    <table>
+        <tr>
+            <th>Culoarea aleasă, în HSL</th>
+            <td id="txtHsl"></td>
+        </tr>
+        <tr>
+            <th>Cum o păstrează browserul</th>
+            <td id="txtRgb"></td>
+        </tr>
+    </table>
+</body>
+</html>
