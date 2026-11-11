@@ -1,0 +1,17 @@
+html,body {
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas {
+  border: 2px solid black;
+  position: absolute;
+  /* centreaza dupa coltul stanga sus al obiecgtului
+    deci il mut cu -jumatate la stg si -jum la drpt  */
+  top: 50%;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: -300px;
+}
